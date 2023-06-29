@@ -21,9 +21,10 @@
         </div>     -->
         
         <div class="body-text">
+        <h3>Planning</h3>
             <p>Welcome to your Homeschool Momma's Organizer!</p>
-            <p>This is the place to keep track of your repeated daily tasks, your family's group motivation, and tracking future plans.</p>
-            <p><a href="account.php">Get your free account now!</a></p>
+            <p>Bacon lorem ipsum</p>
+            <p><a href="">Link</a></p>
         </div>
 
     </section>

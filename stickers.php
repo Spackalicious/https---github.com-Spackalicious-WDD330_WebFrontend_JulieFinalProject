@@ -21,9 +21,9 @@
         </div>     -->
         
         <div class="body-text">
-            <p>Welcome to your Homeschool Momma's Organizer!</p>
-            <p>This is the place to keep track of your repeated daily tasks, your family's group motivation, and tracking future plans.</p>
-            <p><a href="account.php">Get your free account now!</a></p>
+        <h3>Family Team Motivation</h3>
+            <p>We used to do <a target="_blank" href="https://www.homeschool.juliespackman.com/motivation.php#pizza">this</a> but now we're streamlining and going more digital! Which means it's easy for your family to join ours!</p>
+            <p></p>
         </div>
 
     </section>

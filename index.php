@@ -16,13 +16,11 @@
     
         
     <section>
-        <!-- <div class="body-img">
-            <img src="images/index2.jpg" alt="Julie's family photo">
-        </div>     -->
         <div class="front-hero-img">
-            <img src="images/front-image.png" alt="Homeschool Image"/>
+            <img src="images/front-image.png" alt="Homeschool Image by Eugene Chystiakov, from unsplash.com/photos/68KqaloJPaU"/>
         </div>
         <div class="body-text">
+        <h3>Hello!</h3>
             <p>Welcome to your Homeschool Momma's Organizer!</p>
             <p>This is the place to keep track of your repeated daily tasks, your family's group motivation, and tracking future plans.</p>
             <p><a href="account.php">Get your free account now!</a></p>
