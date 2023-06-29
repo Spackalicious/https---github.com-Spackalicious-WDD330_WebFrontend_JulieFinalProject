@@ -1,7 +1,3 @@
-function toggleMenu() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-} 
-
 // Page has 5 to do lists.
 let list0 = `<div class="container" id="container0"> 
     <h1 class="titleText" id="title0">
@@ -296,9 +292,12 @@ ul2.addEventListener("click", function(event){
 // Clear All & Restart button
 const clearLists = document.querySelector("#clearLists");
 clearLists.addEventListener("click", function(event){
-    localStorage.clear();
-    window.location.reload();
+    let warning = confirm("WARNING!!!\n\nAre you certain you want to clear your lists? \nThis will lose all information and give you clean, blank lists.\n\nCancel = Keep your lists.\n\nOK = Clear your lists.");
+    if (!warning) {
+        confirm.close();
+    } else {        
+        localStorage.clear();
+        window.location.reload();
+    }
 })
 
-// set year for footer
-document.querySelector("#year").innerHTML = new Date().getFullYear();
