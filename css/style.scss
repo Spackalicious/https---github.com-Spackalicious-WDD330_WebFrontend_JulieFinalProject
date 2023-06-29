@@ -1,0 +1,49 @@
+@import 'partials/colors';
+@import 'partials/typography';
+@import 'partials/header';
+@import 'partials/nav';  
+@import 'partials/footer';
+@import 'partials/daily';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    overflow-x: hidden;
+  }
+  
+  body {
+    text-align: center;
+    // main page
+    section {
+      .front-hero-img {
+        width: 80%;
+        margin: 10px auto;
+        // border: solid red;
+        // height: 200px;
+        // object-fit: cover;
+        // object-position: 100% 0;
+        overflow: hidden;
+        img {
+          width: 100%;
+          // object-fit: cover;
+          // object-position: 50% 50%;
+        }
+      }
+      .body-text {
+        width: 80%;
+        margin: 10px auto;
+        padding-left: 2%;
+        text-align: left;  
+        // border: solid blue;      
+      }
+    } 
+    // end main section
+    
+  }
+  
+  
+  
+  
+  
+  

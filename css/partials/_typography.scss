@@ -1,0 +1,115 @@
+// import header & body fonts
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Special+Elite&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+// $header-font: 'Special Elite', cursive;
+// $body-font: 'Roboto', sans-serif;
+
+$header-font: "Londrina Outline", cursive;
+$body-font: "Comic Neue", cursive;
+
+h1 {
+    font-family: $header-font;
+    font-size: 3.5em;
+}
+
+h2, h3, h4, h5, h6, p {
+    font-family: $body-font;
+    text-decoration: none;
+}
+
+h3 {
+    color: $color-5;
+    font-size: 2em;
+}
+h4 {
+    color: $color-4;
+    font-size: 1.3em;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    color: $color-5;
+    margin: 10px 0;
+    // border: solid black;
+    a {
+        text-decoration: none;
+        color: $color-4;
+        &:hover {
+            color: $color-3d;
+        }
+        &:active {
+            color: $color-6;
+        }
+    }
+}
+
+ul, li {
+    font-family: $body-font;
+}
+
+
+
+.body-text { 
+    // border: solid green;
+    p {
+        font-size: 1.1em;
+        @media (min-width: 900px) {
+            font-size: 1.3em;
+        }
+    }
+    ul {
+        li {
+            // background-color: yellow;
+            font-family: $body-font;
+            font-size: 1.1em;  
+            color: $color-5;      
+        @media (min-width: 900px) {
+            font-size: 1.3em;
+        }
+            a {
+                text-decoration: none;
+                color: $color-4;
+                &:hover {
+                    color: $color-6;
+                }
+                &:active {
+                    color: $color-3;
+                }
+            }
+        }
+    }
+}
+
+.boards-text { 
+    p {
+        font-size: 1.1em;        
+        @media (min-width: 900px) {
+            font-size: 1.3em;
+        }
+    }
+    ul {
+        li {
+            // background-color: yellow;
+            font-family: $body-font;
+            font-size: 1.1em;  
+            color: $color-5;      
+        @media (min-width: 900px) {
+            font-size: 1.3em;
+        }
+            a {
+                text-decoration: none;
+                color: $color-4;
+                &:hover {
+                    color: $color-6;
+                }
+                &:active {
+                    color: $color-3;
+                }
+            }
+        }
+    }
+}

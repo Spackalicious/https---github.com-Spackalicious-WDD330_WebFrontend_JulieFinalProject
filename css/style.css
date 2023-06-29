@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+h1 {
+  font-family: "Londrina Outline", cursive;
+  font-size: 3.5em;
+}
+
+h2, h3, h4, h5, h6, p {
+  font-family: "Comic Neue", cursive;
+  text-decoration: none;
+}
+
+h3 {
+  color: #404040;
+  font-size: 2em;
+}
+
+h4 {
+  color: #56DAC2;
+  font-size: 1.3em;
+  margin: 20px 0 10px 0;
+}
+
+p {
+  color: #404040;
+  margin: 10px 0;
+}
+p a {
+  text-decoration: none;
+  color: #56DAC2;
+}
+p a:hover {
+  color: #f8a0a0;
+}
+p a:active {
+  color: #CCDB38;
+}
+
+ul, li {
+  font-family: "Comic Neue", cursive;
+}
+
+.body-text p {
+  font-size: 1.1em;
+}
+@media (min-width: 900px) {
+  .body-text p {
+    font-size: 1.3em;
+  }
+}
+.body-text ul li {
+  font-family: "Comic Neue", cursive;
+  font-size: 1.1em;
+  color: #404040;
+}
+@media (min-width: 900px) {
+  .body-text ul li {
+    font-size: 1.3em;
+  }
+}
+.body-text ul li a {
+  text-decoration: none;
+  color: #56DAC2;
+}
+.body-text ul li a:hover {
+  color: #CCDB38;
+}
+.body-text ul li a:active {
+  color: #fab8b8;
+}
+
+.boards-text p {
+  font-size: 1.1em;
+}
+@media (min-width: 900px) {
+  .boards-text p {
+    font-size: 1.3em;
+  }
+}
+.boards-text ul li {
+  font-family: "Comic Neue", cursive;
+  font-size: 1.1em;
+  color: #404040;
+}
+@media (min-width: 900px) {
+  .boards-text ul li {
+    font-size: 1.3em;
+  }
+}
+.boards-text ul li a {
+  text-decoration: none;
+  color: #56DAC2;
+}
+.boards-text ul li a:hover {
+  color: #CCDB38;
+}
+.boards-text ul li a:active {
+  color: #fab8b8;
+}
+
+header {
+  background: #CCDB38;
+  padding: 5%;
+  border-top: solid #56DAC2 5px;
+}
+header a {
+  text-decoration: none;
+}
+header a #headerText h1 {
+  color: #e2eb93;
+  font-size: 3em;
+}
+@media (min-width: 600px) {
+  header a #headerText h1 {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1000px) {
+  header a #headerText h1 {
+    font-size: 5em;
+  }
+}
+header a h3 {
+  color: #f9fbe9;
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+@media (min-width: 1000px) {
+  header a h3 {
+    font-size: 1.5em;
+  }
+}
+
+nav {
+  background-color: #f8a0a0;
+  font-size: 1.4rem;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  font-family: "Comic Neue", cursive;
+  display: none;
+  justify-content: center;
+}
+@media (min-width: 900px) {
+  nav li {
+    display: inline-flex;
+    padding: 0;
+  }
+}
+nav li:first-child {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 900px) {
+  nav li:first-child {
+    display: none;
+  }
+}
+nav li a {
+  display: block;
+  padding: 1%;
+}
+nav li a:link, nav li a:visited {
+  color: #404040;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #fab8b8;
+}
+nav li a:active {
+  background-color: #CCDB38;
+}
+@media (min-width: 900px) {
+  nav li a {
+    padding: 5%;
+    width: 150px;
+    margin: 0;
+  }
+}
+nav .responsive li {
+  display: block;
+}
+@media (min-width: 900px) {
+  nav .responsive li {
+    display: inline-flex;
+  }
+}
+
+footer {
+  background: #CCDB38;
+  width: 100vw;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  padding: 5% 0;
+  border-bottom: solid #56DAC2 5px;
+}
+footer .narrow-return {
+  display: block;
+}
+@media (min-width: 400px) {
+  footer .narrow-return {
+    display: none;
+  }
+}
+footer a {
+  color: #f9fbe9;
+  text-decoration: underline;
+}
+@media (min-width: 600px) {
+  footer {
+    font-size: 1.1em;
+    padding: 2%;
+  }
+}
+@media (min-width: 1000px) {
+  footer {
+    font-size: 1.2em;
+  }
+}
+
+.daily-section {
+  width: 80%;
+  margin: 10px auto;
+  text-align: left;
+  color: white;
+}
+.daily-section h3 {
+  display: inline;
+}
+.daily-section .main-controls {
+  display: inline;
+}
+.daily-section .main-controls li {
+  display: inline;
+  margin: 0 20px;
+  text-decoration: underline;
+  color: #56DAC2;
+  cursor: pointer;
+}
+.daily-section .main-controls li:hover {
+  color: #f8a0a0;
+}
+
+.list-columns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px 0 0 0;
+  min-height: 500px;
+}
+.list-columns .container {
+  width: 18%;
+  min-width: 250px;
+  margin: 0px auto 10px auto;
+  border: solid #404040;
+}
+.list-columns .container .list-controls {
+  display: flex;
+  justify-content: space-evenly;
+  background: #404040;
+  padding: 5px 0 10px 0;
+  font-size: 0.7em;
+}
+.list-columns .container .list-controls li {
+  border: solid #fab8b8 1px;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  color: #56DAC2;
+  cursor: pointer;
+}
+.list-columns .container .list-controls li:hover {
+  background-color: #f8a0a0;
+  color: #404040;
+}
+.list-columns .container .titleText {
+  background: #404040;
+  color: #CCDB38;
+  font-family: "Comic Neue", cursive;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+}
+.list-columns .container .titleText .title {
+  text-align: center;
+  font-family: "Comic Neue", cursive;
+  font-size: 20px;
+  margin: 5px 0;
+  width: 100%;
+  padding: 5px;
+}
+.list-columns .container .to-do-item {
+  font-family: "Comic Neue", cursive;
+  width: 100%;
+  padding: 5px;
+}
+.list-columns .container .to-do-item:focus {
+  background-color: white;
+}
+.list-columns .container .todoListItems {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-columns .container .todoListItems li {
+  padding: 5px;
+  color: #404040;
+  border: solid #404040 1px;
+}
+.list-columns .container .todoListItems li:hover span {
+  width: 30px;
+  opacity: 1;
+  border-radius: 100px;
+}
+.list-columns .container .todoListItems li span {
+  background-color: #fab8b8;
+  height: 30px;
+  width: 0px;
+  display: inline-block;
+  margin: 5px 20px 5px 5px;
+  margin: 5px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 1px 1px 1px;
+  color: white;
+  transition: 0.3s linear;
+  opacity: 0;
+}
+.list-columns .container .todoListItems li span:active {
+  background-color: #f8a0a0;
+}
+
+.crossOut {
+  color: #404040;
+  text-decoration: line-through;
+  background-color: #737373;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  text-align: center;
+}
+body section .front-hero-img {
+  width: 80%;
+  margin: 10px auto;
+  overflow: hidden;
+}
+body section .front-hero-img img {
+  width: 100%;
+}
+body section .body-text {
+  width: 80%;
+  margin: 10px auto;
+  padding-left: 2%;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */

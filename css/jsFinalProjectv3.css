@@ -1,0 +1,167 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background: teal; */    
+}
+.body2 {
+    background: black;
+}
+
+#changeColors, #clearLists, #newPic {
+    /* border: solid red; */
+    padding: 10px;
+    margin: 5px;
+    width: 180px;
+    border-radius: 15px;
+    font-size: 12px;
+    background: grey;
+    color: white;
+}
+
+
+input[type='button']:hover, #changeColors:hover, #clearLists:hover {
+    color: rgb(165, 215, 213);
+}
+
+.list-columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 500px;
+    /* border: solid green; */
+}
+
+/* this is the actual container for each list */
+.container {
+    width: 360px;
+    margin: 100px auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border: solid grey 2px;
+    border-radius: 15px;
+}
+.container2 {
+    border: solid teal;
+}
+
+h1 {
+    background-color: grey;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    /* text-transform: uppercase; */
+    font-size: 24px;
+    font-weight: normal;
+    /* border: solid green; */
+    border-radius: 10px 10px 0 0;
+}
+.h1two {
+    background-color: rgb(171, 236, 236);
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* pointer-events: auto; */
+    /* border: solid pink; */
+    border-radius: 0 0 15px 15px;
+}
+
+li {
+    background-color: #fff;
+    height: 50px;
+    line-height: 40px;
+    color: #666;
+    pointer-events: auto;
+    /* border: solid aqua; */
+    border-radius: 0 0 15px 15px;
+    border-top: solid grey 2px;
+}
+
+/* li:nth-child(2n){
+    background-color: #f7f7f7;    
+} */
+
+span {
+    background-color: #888118;
+    height: 30px;
+    width: 0px;
+    display: inline-block;
+    /* margin-right: 20px; */
+    margin: 5px 20px 5px 5px;
+    text-align: center;
+    vertical-align: center;
+    padding: 0 2px 6px 2px;
+    color: white;
+    transition: 0.3s linear;
+    opacity: 0;
+    /* border: solid blue; */
+}
+
+li:hover span {
+    width: 30px;
+    opacity: 1;
+    border-radius: 100px;
+}
+
+input {
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    border: 3px solid rgba(0,0,0,0);
+    color: rgb(86, 142, 140);
+    font-size: 18px;
+    /* background-color: #f7f7f7; */
+    background-color: #fae9e9;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    pointer-events: auto;
+}
+.to-do-item {
+    border-radius: 0 0 10px 10px;
+    /* border: hotpink solid; */
+    /* background: palegoldenrod; */
+}
+
+input:focus{
+    background-color: white;
+    border: 3px solid darkcyan;
+    outline: none;
+}
+
+
+
+.crossOut {
+    color: grey;
+    text-decoration: line-through;
+}
+
+footer {
+    /* height: 100px; */
+    background: rgb(202, 202, 202);
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    padding: 15px 0 35px 0;
+    margin: 0px;
+    border-bottom: solid darkcyan 5px;
+    /* border: solid red; */
+}
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+footer a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+}
+/* #year {
+    color: red;
+    border: solid teal;
+} */
+

@@ -1,0 +1,31 @@
+footer {
+    background: $color-6;
+    // background: $color-5;
+    width: 100vw;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    padding: 5% 0;
+    border-bottom: solid $color-4 5px;
+    // overflow-x: hidden;
+    .narrow-return {
+        display: block;
+        @media (min-width: 400px) {
+            display: none;
+        }
+    }
+    a {
+        color: $color-1;
+        text-decoration: underline;
+    }
+    // a:hover {
+    //     color: $color-3d;
+    // }
+    @media (min-width: 600px) {
+        font-size: 1.1em;
+        padding: 2%;
+    }
+    @media (min-width: 1000px) {
+        font-size: 1.2em;
+    }
+}
