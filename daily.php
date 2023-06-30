@@ -21,15 +21,7 @@
             <h3>Daily Lists</h3>
             <ul class="main-controls">
                 <li id="clearLists">clear all & restart</li>
-                <li id="checkAll">check all</li>
-                <li id="uncheckAll">uncheck all</li>
             </ul>
-
-    <!-- <div id="buttons">         -->
-        <!-- <input type="button" id="changeColors" value="Change Color Scheme"> -->
-        <!-- <input type="button" id="clearLists" value="Clear All & Restart"> -->
-        <!-- <input type="button" id="newPic" value="Get a New Nature Photo"> -->
-    <!-- </div> -->
 
     <div class="list-columns">   
         <!-- This is where lists will appear from JS -->
