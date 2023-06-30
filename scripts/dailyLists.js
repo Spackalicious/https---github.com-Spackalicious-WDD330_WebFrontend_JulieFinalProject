@@ -4,8 +4,9 @@ let list0 = `<div class="container" id="container0">
         <input type="textarea" class="title" id="titleInput0" placeholder="Add List Title">
     </h1>
     <ul class="list-controls">
-        <li id="checkUncheck-list0">check/uncheck</li>
-        <li id="resetList-list0">reset list</li>
+        <li id="checkAll0">check all</li>
+        <li id="uncheckAll0">uncheck all</li>
+        <li id="resetList0">reset list</li>
     </ul>
     <input type="text" class="to-do-item" id="to-do-item-0" placeholder="Add New To Do Item"/>
     <ul class="todoListItems" id="ul0">        
@@ -17,8 +18,8 @@ let list1 = `<div class="container" id="container1">
         <input type="textarea" class="title" id="titleInput1" placeholder="Add List Title">
     </h1>
     <ul class="list-controls">
-        <li id="checkUncheck-list1">check/uncheck</li>
-        <li id="resetList-list1">reset list</li>
+        <li id="checkUncheckList1">check/uncheck</li>
+        <li id="resetList1">reset list</li>
     </ul>
     <input type="text" class="to-do-item" id="to-do-item-1" placeholder="Add New To Do Item"/>
     <ul class="todoListItems" id="ul1">        
@@ -30,8 +31,8 @@ let list2 = `<div class="container" id="container2">
         <input type="textarea" class="title" id="titleInput2" placeholder="Add List Title">
     </h1>
     <ul class="list-controls">
-        <li id="checkUncheck-list2">check/uncheck</li>
-        <li id="resetList-list2">reset list</li>
+        <li id="checkUncheckList2">check/uncheck</li>
+        <li id="resetList2">reset list</li>
     </ul>
     <input type="text" class="to-do-item" id="to-do-item-2" placeholder="Add New To Do Item"/>
     <ul class="todoListItems" id="ul2">        
@@ -43,8 +44,8 @@ let list3 = `<div class="container" id="container3">
         <input type="textarea" class="title" id="titleInput3" placeholder="Add List Title">
     </h1>
     <ul class="list-controls">
-        <li id="checkUncheck-list3">check/uncheck</li>
-        <li id="resetList-list3">reset list</li>
+        <li id="checkUncheckList3">check/uncheck</li>
+        <li id="resetList3">reset list</li>
     </ul>
     <input type="text" class="to-do-item" id="to-do-item-3" placeholder="Add New To Do Item"/>
     <ul class="todoListItems" id="ul3">        
@@ -56,8 +57,8 @@ let list4 = `<div class="container" id="container4">
         <input type="textarea" class="title" id="titleInput4" placeholder="Add List Title">
     </h1>
     <ul class="list-controls">
-        <li id="checkUncheck-list4">check/uncheck</li>
-        <li id="resetList-list4">reset list</li>
+        <li id="checkUncheckList4">check/uncheck</li>
+        <li id="resetList4">reset list</li>
     </ul>
     <input type="text" class="to-do-item" id="to-do-item-4" placeholder="Add New To Do Item"/>
     <ul class="todoListItems" id="ul4">        
@@ -87,6 +88,18 @@ function setTitle0() {
     };
 }
 setTitle0();
+function resetList0() {
+    const resetList0 = document.querySelector("#resetList0");
+    resetList0.addEventListener("click", function(event){
+    let warning = confirm("WARNING!!!\n\nAre you certain you want to clear this list? \nThis will lose all information and give you a blank list.\n\nCancel = Keep your list.\n\nOK = Clear this list.");
+    if (warning) {
+        localStorage.removeItem("listname0");
+        localStorage.removeItem("list0");
+        window.location.reload();
+    } 
+    })
+}
+resetList0();
 
 function setTitle1() {    
     if (localStorage.getItem("listname1") != null) { 
@@ -95,8 +108,7 @@ function setTitle1() {
         let inputTitle = document.querySelector("#titleInput1");
         let title = document.querySelector("#title1");
         inputTitle.addEventListener("keypress", function(event){      
-        if(event.which === 13){ // Listen for "Enter" keypress
-            // Save Title Text
+        if(event.which === 13){ 
             let newTitle = inputTitle.value;
             title.innerHTML = "";
             title.innerHTML = newTitle;
@@ -106,6 +118,18 @@ function setTitle1() {
     };
 }
 setTitle1();
+function resetList1() {
+    const resetList1 = document.querySelector("#resetList1");
+    resetList1.addEventListener("click", function(event){
+    let warning = confirm("WARNING!!!\n\nAre you certain you want to clear this list? \nThis will lose all information and give you a blank list.\n\nCancel = Keep your list.\n\nOK = Clear this list.");
+    if (warning) {
+        localStorage.removeItem("listname1");
+        localStorage.removeItem("list1");
+        window.location.reload();
+    } 
+    })
+}
+resetList1();
 
 function setTitle2() {    
     if (localStorage.getItem("listname2") != null) { 
@@ -114,8 +138,7 @@ function setTitle2() {
         let inputTitle = document.querySelector("#titleInput2");
         let title = document.querySelector("#title2");
         inputTitle.addEventListener("keypress", function(event){      
-        if(event.which === 13){ // Listen for "Enter" keypress
-            // Save Title Text
+        if(event.which === 13){ 
             let newTitle = inputTitle.value;
             title.innerHTML = "";
             title.innerHTML = newTitle;
@@ -125,6 +148,18 @@ function setTitle2() {
     };
 }
 setTitle2();
+function resetList2() {
+    const resetList2 = document.querySelector("#resetList2");
+    resetList2.addEventListener("click", function(event){
+    let warning = confirm("WARNING!!!\n\nAre you certain you want to clear this list? \nThis will lose all information and give you a blank list.\n\nCancel = Keep your list.\n\nOK = Clear this list.");
+    if (warning) {
+        localStorage.removeItem("listname2");
+        localStorage.removeItem("list2");
+        window.location.reload();
+    } 
+    })
+}
+resetList2();
 
 function setTitle3() {    
     if (localStorage.getItem("listname3") != null) { 
@@ -133,8 +168,7 @@ function setTitle3() {
         let inputTitle = document.querySelector("#titleInput3");
         let title = document.querySelector("#title3");
         inputTitle.addEventListener("keypress", function(event){      
-        if(event.which === 13){ // Listen for "Enter" keypress
-            // Save Title Text
+        if(event.which === 13){ 
             let newTitle = inputTitle.value;
             title.innerHTML = "";
             title.innerHTML = newTitle;
@@ -144,6 +178,18 @@ function setTitle3() {
     };
 }
 setTitle3();
+function resetList3() {
+    const resetList3 = document.querySelector("#resetList3");
+    resetList3.addEventListener("click", function(event){
+    let warning = confirm("WARNING!!!\n\nAre you certain you want to clear this list? \nThis will lose all information and give you a blank list.\n\nCancel = Keep your list.\n\nOK = Clear this list.");
+    if (warning) {
+        localStorage.removeItem("listname3");
+        localStorage.removeItem("list3");
+        window.location.reload();
+    } 
+    })
+}
+resetList3();
 
 function setTitle4() {    
     if (localStorage.getItem("listname4") != null) { 
@@ -152,8 +198,7 @@ function setTitle4() {
         let inputTitle = document.querySelector("#titleInput4");
         let title = document.querySelector("#title4");
         inputTitle.addEventListener("keypress", function(event){      
-        if(event.which === 13){ // Listen for "Enter" keypress
-            // Save Title Text
+        if(event.which === 13){ 
             let newTitle = inputTitle.value;
             title.innerHTML = "";
             title.innerHTML = newTitle;
@@ -163,11 +208,22 @@ function setTitle4() {
     };
 }
 setTitle4();
+function resetList4() {
+    const resetList4 = document.querySelector("#resetList4");
+    resetList4.addEventListener("click", function(event){
+    let warning = confirm("WARNING!!!\n\nAre you certain you want to clear this list? \nThis will lose all information and give you a blank list.\n\nCancel = Keep your list.\n\nOK = Clear this list.");
+    if (warning) {
+        localStorage.removeItem("listname4");
+        localStorage.removeItem("list4");
+        window.location.reload();
+    } 
+    })
+}
+resetList4();
 
 // set lists to memory
 
 // add items to List0
-// let ul0 = document.querySelector("#ul0");
 function setList0() {    
     let ul0 = document.querySelector("#ul0");
     if (localStorage.getItem("list0") != null) { 
@@ -182,7 +238,7 @@ function setList0() {
             this.value = ""; //Clear To Do Text Box
             //Create New LI Element
             let newLi = ul0.appendChild(document.createElement("li"));
-            newLi.setAttribute("id", "li0");
+            // newLi.setAttribute("id", "li0");
             //Create New Span Element
             let newSpan = newLi.appendChild(document.createElement("span"));
             // Create new trash can button to delete this item
@@ -210,6 +266,43 @@ async function removeListItems0() {
     })
 }
 removeListItems0();
+
+function checkAll0() {
+    const toggleButton = document.querySelector("#checkAll0");
+    const localStorageList = localStorage.getItem("list0");        
+        
+        toggleButton.addEventListener("click", function(event){
+                let target = document.querySelector("#ul0");
+                let targetSpan = target.children;
+                // let targetSpan = document.body.section.children;
+                // console.log(target.tagName);
+                // console.log(targetSpan[0].tagName);
+                // console.log(targetSpan.length);
+                for (let i = 0; i < targetSpan.length; i++) {
+                    // targetSpan[i].classList.toggle("crossOut");
+                    // ^^just switches which ones are clicked.
+                    targetSpan[i].setAttribute("class", "crossOut");
+                    localStorage.setItem("list0", ul0.innerHTML);
+                    // console.log(`completed ${i} ` + targetSpan[i].tagName);
+                }
+                // console.log("Completed Task"); 
+        })
+}
+checkAll0();
+function uncheckAll0() {
+    const toggleButton = document.querySelector("#uncheckAll0");
+    // const localStorageList = localStorage.getItem("list0");        
+        
+        toggleButton.addEventListener("click", function(event){
+                let target = document.querySelector("#ul0");
+                let targetSpan = target.children;
+                for (let i = 0; i < targetSpan.length; i++) {
+                    targetSpan[i].setAttribute("class", "");
+                    localStorage.setItem("list0", ul0.innerHTML);
+                }
+        })
+}
+uncheckAll0();
 // end List 0
 // add items to List 1
 function setList1() {    
@@ -266,7 +359,7 @@ function setList2() {
             let todoText = this.value;               
             this.value = ""; 
             let newLi = ul2.appendChild(document.createElement("li"));
-            newLi.setAttribute("id", "li2");
+            // newLi.setAttribute("id", "li2");
             let newSpan = newLi.appendChild(document.createElement("span"));
             let newI = newSpan.appendChild(document.createElement("I")).classList.add("fas", "fa-trash");
             newLi.appendChild(document.createTextNode(" " + todoText));
@@ -307,7 +400,7 @@ function setList3() {
             let todoText = this.value;               
             this.value = ""; 
             let newLi = ul3.appendChild(document.createElement("li"));
-            newLi.setAttribute("id", "li3");
+            // newLi.setAttribute("id", "li3");
             let newSpan = newLi.appendChild(document.createElement("span"));
             let newI = newSpan.appendChild(document.createElement("I")).classList.add("fas", "fa-trash");
             newLi.appendChild(document.createTextNode(" " + todoText));
@@ -348,7 +441,7 @@ function setList4() {
             let todoText = this.value;               
             this.value = ""; 
             let newLi = ul4.appendChild(document.createElement("li"));
-            newLi.setAttribute("id", "li4");
+            // newLi.setAttribute("id", "li4");
             let newSpan = newLi.appendChild(document.createElement("span"));
             let newI = newSpan.appendChild(document.createElement("I")).classList.add("fas", "fa-trash");
             newLi.appendChild(document.createTextNode(" " + todoText));
@@ -388,15 +481,21 @@ function clearAllRestart() {
 clearAllRestart();
 
 // Check All button
-async function checkAll() {
-    const checkAll = document.querySelector("#checkAll");
-    const list0 = document.querySelector("#ul0");
-    const list1 = document.querySelector("#ul1");
-    const list2 = document.querySelector("#ul2");
-    const list3 = document.querySelector("#ul3");
-    const list4 = document.querySelector("#ul4");
-    checkAll.addEventListener("click", function(){
-        list0.foreach(list0.class.toggle("crossOut"));
+// function checkAll() {
+//     const checkAll = document.querySelector("#checkAll");
+//     // const list0 = document.querySelector("#ul0");
+//     const list0 = localStorage.getItem("list0");
+//     const list1 = document.querySelector("#ul1");
+//     const list2 = document.querySelector("#ul2");
+//     const list3 = document.querySelector("#ul3");
+//     const list4 = document.querySelector("#ul4");
+    // checkAll.addEventListener("click", function(){
+        // list0.map(li => classList.toggle("crossOut"));
+        // list0[1].classList.toggle("crossOut");
+        // list0[1].setAttribute("class", "crossOut");
+        // list1[2].toggle("crossOut");
+        // list1.classList.toggle("crossOut");
+
             // if (list0.class = "crossOut") {
             //     // list0.li.setAttribute("class", "");
             //     console.log("class is set to crossOut")
@@ -405,20 +504,25 @@ async function checkAll() {
             //     console.log("not set");
             // }
         
-        
+            // checkAll.addEventListener("click", function(event){
+            //     let target = event.target;
+            //     let targetSpan = event.target.parentNode.parentNode;
+            //     target.classList.toggle("crossOut");
+            //     localStorage.setItem("list4", ul4.innerHTML);               
+            // })
 
         
         // list0.classList.toggle("crossOut");
         
-        localStorage.setItem("list0", ul0.innerHTML);
-        // list1.classList.toggle("crossOut");
-        localStorage.setItem("list1", ul1.innerHTML);
-        // list2.classList.toggle("crossOut");
-        localStorage.setItem("list2", ul2.innerHTML);
-        // list3.classList.toggle("crossOut");
-        localStorage.setItem("list3", ul3.innerHTML);
-        // list4.classList.toggle("crossOut");
-        localStorage.setItem("list4", ul4.innerHTML);        
-    })
-}
-checkAll();
+        // localStorage.setItem("list0", ul0.innerHTML);
+        // // list1.classList.toggle("crossOut");
+        // localStorage.setItem("list1", ul1.innerHTML);
+        // // list2.classList.toggle("crossOut");
+        // localStorage.setItem("list2", ul2.innerHTML);
+        // // list3.classList.toggle("crossOut");
+        // localStorage.setItem("list3", ul3.innerHTML);
+        // // list4.classList.toggle("crossOut");
+        // localStorage.setItem("list4", ul4.innerHTML);        
+    // })
+// }
+// checkAll();
