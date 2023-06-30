@@ -6,7 +6,7 @@
     
     <?php include 'common/head.php';?>
     <style>
-        .stickers {background-color: white; font-weight: bold;}
+        .motivation {background-color: white; font-weight: bold;}
     </style>
 </head>
 
@@ -15,11 +15,7 @@
     <?php include 'common/nav.php';?>     
     
         
-    <section>
-        <!-- <div class="body-img">
-            <img src="images/index2.jpg" alt="Julie's family photo">
-        </div>     -->
-        
+    <section>        
         <div class="body-text">
         <h3>Family Team Motivation</h3>
             <p>We used to do <a target="_blank" href="https://www.homeschool.juliespackman.com/motivation.php#pizza">this</a> but now we're streamlining and going more digital! Which means it's easy for your family to join ours!</p>

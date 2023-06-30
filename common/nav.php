@@ -8,7 +8,7 @@
             <a href="daily.php" class="daily">Daily</a>
         </li>
         <li>
-            <a href="stickers.php" class="stickers">Stickers</a>
+            <a href="motivation.php" class="motivation">Motivation</a>
         </li>
         <li>
             <a href="planning.php" class="planning">Planning</a>
