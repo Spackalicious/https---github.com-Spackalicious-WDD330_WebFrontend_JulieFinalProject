@@ -1,0 +1,39 @@
+#resetStars {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  .crossOut {
+    background-color: lightseagreen;
+    transition: all 0.5s ease;
+    color: white;
+    &:nth-child(odd) {
+      background: pink;
+    }
+    &:nth-child(3n) {
+      background: lightblue;
+    }
+  }
+}
+
+li {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: lightgrey;
+  color: lightgrey;
+  font-size: 72px;
+  line-height: 97px;
+  font-weight: bold;
+  padding: 0px 0 20px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.crossOut {
+  /* this makes it so that if the ul is accidentally clicked, the background will stay white and not change. */
+  background-color: white;
+}
