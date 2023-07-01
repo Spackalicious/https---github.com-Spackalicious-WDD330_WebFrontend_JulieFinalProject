@@ -16,16 +16,17 @@
     <?php include 'common/nav.php';?>     
     
         
-    <section>        
-        <div class="body-text">
-        <h3>Team FAMILY Motivation</h3>
+    <section>               
             
-            <div id="motivation-div">
-                <p>Earn multiple stars: <input id="starCount"/></p>
-                
-                <ul id="motivation-list"></ul>
-            </div>
+        <div id="motivation-section">
+            <h3>Team Motivation</h3>
+            <!-- <p><span id="resetStars">reset stars</span>   |   earn multiple stars: <input id="starCount"/></p> -->
+            <p><span id="resetStars">reset stars</span></p>
         </div>
+        <div id="motDiv">
+            <ul id="motUL">  
+            </ul>            
+        </div>       
 
     </section>
        

@@ -579,7 +579,18 @@ function clearAllRestart() {
     clearLists.addEventListener("click", function(event){
     let warning = confirm("WARNING!!!\n\nAre you certain you want to clear your lists? \nThis will lose all information and give you clean, blank lists.\n\nCancel = Keep your lists.\n\nOK = Clear your lists.");
     if (warning) {
-        localStorage.clear();
+        localStorage.removeItem("listname0");
+        localStorage.removeItem("list0");
+        localStorage.removeItem("listname1");
+        localStorage.removeItem("list1");
+        localStorage.removeItem("listname2");
+        localStorage.removeItem("list2");
+        localStorage.removeItem("listname3");
+        localStorage.removeItem("list3");
+        localStorage.removeItem("listname4");
+        localStorage.removeItem("list4");
+        localStorage.removeItem("listname5");
+        localStorage.removeItem("list5");
         window.location.reload();
     } 
     })

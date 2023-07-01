@@ -1,6 +1,77 @@
+#motivation-section {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    align-content: bottom;
+    // border: solid pink;
+    p {
+        font-size: 16px;
+        // border: solid green;
+        // first margin line is for when there is an addStars input
+        // margin: 7px 0 0px 30px;
+        margin: 14px 0 0px 30px;
+    }
+    #resetStars {
+        // border: solid purple;
+        // margin: 0 0 0 35px;
+        cursor: pointer;
+        font-family: $body-font;
+        color: $color-4;
+        text-decoration: underline;
+        &:hover {
+            color: $color-6;
+        }
+        &:active {
+            color: $color-3;
+        }
+      }    
+}
+
+
+  
+#motUL {
+list-style-type: none;
+display: flex;
+flex-flow: row wrap;
+width: 80%;
+// border: solid gold;
+margin: 0 auto;
+    li {
+        width: 50px;
+        height: 50px;
+        padding: 0px 0 0px 0px;
+        margin: 3px;
+        border-radius: 100%;
+        background-color: lightgrey;
+        color: lightgrey;
+        font-size: 44px;
+        line-height: 49px;
+        font-weight: bold;        
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .checkStar {
+        background-color: $color-2;
+        transition: all 0.5s ease;
+        color: white;
+        &:nth-child(odd) {
+        background: $color-4;
+        }
+        &:nth-child(3n) {
+        background: $color-6;
+        }
+    }
+}
+
+.checkStar {
+/* this makes it so that if the ul is accidentally clicked, the background will stay white and not change. */
+background-color: white;
+}
+
+
 #starCount {
-    width: 50px;
-    height: 35px;
+    width: 40px;
+    height: 30px;
     text-align: center;
     font-size: 1em;
     color: $color-3d;
@@ -12,76 +83,76 @@
     }
 }
 
-#starBoxLabel {
-    display: none;
-    &:before {
-        display: inline;
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: turquoise;
-    border: solid teal;
-    border-radius: 100%;
-    transition: border 0.7s ease;
-    &:checked {
-        border: solid purple;
-    }
-    }
-}
+// #starBoxLabel {
+//     display: none;
+//     &:before {
+//         display: inline;
+//     content: "";
+//     width: 40px;
+//     height: 40px;
+//     background: turquoise;
+//     border: solid teal;
+//     border-radius: 100%;
+//     transition: border 0.7s ease;
+//     &:checked {
+//         border: solid purple;
+//     }
+//     }
+// }
 
-.checkedStar {
-    color: white;
-}
+// .checkedStar {
+//     color: white;
+// }
 
-#starBox {
-    // background-color: red;
-    height: 30px;
-    width: 130px;
-    border-radius: 50px;
-    // border: solid pink;
-    margin: 2px;
-    transition: border 0.7s ease;
-    &:checked {
-        background-color: green;
-    }
-    &:before{
-        content:"";
-        width: 20px;
-        height: 20px;
-        background: #fff;
-        border: solid 2px rgb(219, 35, 170);
-        display: block;
-        position: absolute;
-        border-radius: 100%;
-        right: 20px;
-        top: 30%;
-        transition: border 0.7s ease
-      }
-}
+// #starBox {
+//     // background-color: red;
+//     height: 30px;
+//     width: 130px;
+//     border-radius: 50px;
+//     // border: solid pink;
+//     margin: 2px;
+//     transition: border 0.7s ease;
+//     &:checked {
+//         background-color: green;
+//     }
+//     &:before{
+//         content:"";
+//         width: 20px;
+//         height: 20px;
+//         background: #fff;
+//         border: solid 2px rgb(219, 35, 170);
+//         display: block;
+//         position: absolute;
+//         border-radius: 100%;
+//         right: 20px;
+//         top: 30%;
+//         transition: border 0.7s ease
+//       }
+// }
 
-#motivation-list {
-    // border: solid white;
-    display: flex;
-    flex-flow: row wrap;
-    li {
-        cursor: pointer;
-        color: white;
-        font-weight: bold;
-        border: solid white;
-        border-radius: 100%;
-        width: 45px;
-        font-size: 2em;
-        text-align: center;
-        background-color: $color-2;
-        line-height: 1.2em;
-        &:hover {
-            border: solid 1px $color-3;
-        }
-        &:nth-child(odd) {
-            background-color: $color-4;
-        }
-        &:nth-child(3n) {
-            background-color: $color-6;
-        }
-    }
-}
+// #motivation-list {
+//     // border: solid white;
+//     display: flex;
+//     flex-flow: row wrap;
+//     li {
+//         cursor: pointer;
+//         color: white;
+//         font-weight: bold;
+//         border: solid white;
+//         border-radius: 100%;
+//         width: 45px;
+//         font-size: 2em;
+//         text-align: center;
+//         background-color: $color-2;
+//         line-height: 1.2em;
+//         &:hover {
+//             border: solid 1px $color-3;
+//         }
+//         &:nth-child(odd) {
+//             background-color: $color-4;
+//         }
+//         &:nth-child(3n) {
+//             background-color: $color-6;
+//         }
+//     }
+// }

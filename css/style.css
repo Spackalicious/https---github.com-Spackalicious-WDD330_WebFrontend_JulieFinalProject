@@ -341,9 +341,70 @@ footer a {
   background-color: #737373;
 }
 
-#starCount {
+#motivation-section {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  align-content: bottom;
+}
+#motivation-section p {
+  font-size: 16px;
+  margin: 14px 0 0px 30px;
+}
+#motivation-section #resetStars {
+  cursor: pointer;
+  font-family: "Comic Neue", cursive;
+  color: #56DAC2;
+  text-decoration: underline;
+}
+#motivation-section #resetStars:hover {
+  color: #CCDB38;
+}
+#motivation-section #resetStars:active {
+  color: #fab8b8;
+}
+
+#motUL {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+#motUL li {
   width: 50px;
-  height: 35px;
+  height: 50px;
+  padding: 0px 0 0px 0px;
+  margin: 3px;
+  border-radius: 100%;
+  background-color: lightgrey;
+  color: lightgrey;
+  font-size: 44px;
+  line-height: 49px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+}
+#motUL .checkStar {
+  background-color: #96e8d9;
+  transition: all 0.5s ease;
+  color: white;
+}
+#motUL .checkStar:nth-child(odd) {
+  background: #56DAC2;
+}
+#motUL .checkStar:nth-child(3n) {
+  background: #CCDB38;
+}
+
+.checkStar {
+  /* this makes it so that if the ul is accidentally clicked, the background will stay white and not change. */
+  background-color: white;
+}
+
+#starCount {
+  width: 40px;
+  height: 30px;
   text-align: center;
   font-size: 1em;
   color: #f8a0a0;
@@ -353,77 +414,6 @@ footer a {
 }
 #starCount:focus {
   background-color: #96e8d9;
-}
-
-#starBoxLabel {
-  display: none;
-}
-#starBoxLabel:before {
-  display: inline;
-  content: "";
-  width: 40px;
-  height: 40px;
-  background: turquoise;
-  border: solid teal;
-  border-radius: 100%;
-  transition: border 0.7s ease;
-}
-#starBoxLabel:before:checked {
-  border: solid purple;
-}
-
-.checkedStar {
-  color: white;
-}
-
-#starBox {
-  height: 30px;
-  width: 130px;
-  border-radius: 50px;
-  margin: 2px;
-  transition: border 0.7s ease;
-}
-#starBox:checked {
-  background-color: green;
-}
-#starBox:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border: solid 2px rgb(219, 35, 170);
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  right: 20px;
-  top: 30%;
-  transition: border 0.7s ease;
-}
-
-#motivation-list {
-  display: flex;
-  flex-flow: row wrap;
-}
-#motivation-list li {
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  border: solid white;
-  border-radius: 100%;
-  width: 45px;
-  font-size: 2em;
-  text-align: center;
-  background-color: #96e8d9;
-  line-height: 1.2em;
-}
-#motivation-list li:hover {
-  border: solid 1px #fab8b8;
-}
-#motivation-list li:nth-child(odd) {
-  background-color: #56DAC2;
-}
-#motivation-list li:nth-child(3n) {
-  background-color: #CCDB38;
 }
 
 * {
