@@ -1,0 +1,87 @@
+#starCount {
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    font-size: 1em;
+    color: $color-3d;
+    font-family: $body-font;
+    border: solid lighten($color-5, 20%);
+    border-radius: 5px;
+    &:focus {
+        background-color: $color-2;
+    }
+}
+
+#starBoxLabel {
+    display: none;
+    &:before {
+        display: inline;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: turquoise;
+    border: solid teal;
+    border-radius: 100%;
+    transition: border 0.7s ease;
+    &:checked {
+        border: solid purple;
+    }
+    }
+}
+
+.checkedStar {
+    color: white;
+}
+
+#starBox {
+    // background-color: red;
+    height: 30px;
+    width: 130px;
+    border-radius: 50px;
+    // border: solid pink;
+    margin: 2px;
+    transition: border 0.7s ease;
+    &:checked {
+        background-color: green;
+    }
+    &:before{
+        content:"";
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: solid 2px rgb(219, 35, 170);
+        display: block;
+        position: absolute;
+        border-radius: 100%;
+        right: 20px;
+        top: 30%;
+        transition: border 0.7s ease
+      }
+}
+
+#motivation-list {
+    // border: solid white;
+    display: flex;
+    flex-flow: row wrap;
+    li {
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        border: solid white;
+        border-radius: 100%;
+        width: 45px;
+        font-size: 2em;
+        text-align: center;
+        background-color: $color-2;
+        line-height: 1.2em;
+        &:hover {
+            border: solid 1px $color-3;
+        }
+        &:nth-child(odd) {
+            background-color: $color-4;
+        }
+        &:nth-child(3n) {
+            background-color: $color-6;
+        }
+    }
+}

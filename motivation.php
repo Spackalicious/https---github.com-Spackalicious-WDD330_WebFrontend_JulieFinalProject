@@ -8,6 +8,7 @@
     <style>
         .motivation {background-color: white; font-weight: bold;}
     </style>
+    <script src="scripts/motivation.js" defer></script>
 </head>
 
 <body>
@@ -17,9 +18,13 @@
         
     <section>        
         <div class="body-text">
-        <h3>Family Team Motivation</h3>
-            <p>We used to do <a target="_blank" href="https://www.homeschool.juliespackman.com/motivation.php#pizza">this</a> but now we're streamlining and going more digital! Which means it's easy for your family to join ours!</p>
-            <p></p>
+        <h3>Team FAMILY Motivation</h3>
+            
+            <div id="motivation-div">
+                <p>Earn multiple stars: <input id="starCount"/></p>
+                
+                <ul id="motivation-list"></ul>
+            </div>
         </div>
 
     </section>

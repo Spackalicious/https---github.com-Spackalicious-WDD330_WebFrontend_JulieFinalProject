@@ -159,7 +159,6 @@ function uncheckAll0() {
 }
 uncheckAll0();
 
-// Remove or Cross Out Items for List0
 async function removeListItems0() {
     ul0.addEventListener("click", function(event){
         let target = event.target;
@@ -208,7 +207,6 @@ function setTitle1() {
 }
 setTitle1();
 
-// add items to List 1
 function setList1() {    
     let ul1 = document.querySelector("#ul1");
     if (localStorage.getItem("list1") != null) { 
@@ -287,6 +285,7 @@ function resetList1() {
 }
 resetList1();
 
+// BEGIN THIRD LIST (List2)
 function setTitle2() {    
     if (localStorage.getItem("listname2") != null) { 
         document.querySelector("#title2").innerHTML = localStorage.getItem("listname2");
@@ -382,6 +381,7 @@ function resetList2() {
 }
 resetList2();
 
+// BEGIN FOURTH LIST (List3)
 function setTitle3() {    
     if (localStorage.getItem("listname3") != null) { 
         document.querySelector("#title3").innerHTML = localStorage.getItem("listname3");
@@ -477,6 +477,7 @@ function resetList3() {
 }
 resetList3();
 
+// BEGIN FIFTH LIST (List4)
 function setTitle4() {    
     if (localStorage.getItem("listname4") != null) { 
         document.querySelector("#title4").innerHTML = localStorage.getItem("listname4");

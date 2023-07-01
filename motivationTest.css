@@ -1,0 +1,109 @@
+/* my section */
+#motSection {
+  border: solid gold;
+  padding: 0 50px 50px 0;
+  text-align: center;
+}
+
+/* span {
+  border: solid red;
+  /* works! around each circle
+} */
+
+/* The container */
+.container {
+  display: inline-block;
+	position: relative;
+  /* margin keeps checkboxes from overlapping */
+  margin: 22px 10px;
+	width: 30px;
+  cursor: pointer;
+  /* border: solid purple; */
+  /* ^^the container isn't the circle, it's just a space. */
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  /* position keeps this from collapsing */
+  position: absolute;
+  /* this height along with margins for .container keep circles from overlapping*/
+  height: 45px;
+  width: 45px;
+  background-color: #eee;
+  border-radius: 100%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: navy;  
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: inline;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  content: "\2606";
+  color: gold;
+  font-size: 36px;
+  font-weight: bold;
+  left: 7px;
+  top: -5px;
+}
+
+/* other options for checkmark indicator: 
+smilie face white: /263A
+smilie face filled: /263B
+sun with rays: /263C
+filled in sun with rays: /2600
+shamrock: /2618
+snowman: /26C4
+filled in star: /2605
+filled in horse head: /265E
+heart outline: /2661
+filled in heart: /2665
+eighth notes: /266B
+atom symbol (looks like a flower: /269B
+fleur-de-lis: /269C
+soccer ball: /26BD
+baseball: /26BE
+ferry: /26F4
+colorful sparkles: /2728
+3D "pinwheel star": /272F
+✾	273E	SIX PETALLED BLACK AND WHITE FLORETTE
+✿	273F	BLACK FLORETTE
+❀	2740	WHITE FLORETTE
+❁	2741	EIGHT PETALLED OUTLINED BLACK FLORETTE
+❂	2742	CIRCLED OPEN CENTRE EIGHT POINTED STAR
+❃	2743	HEAVY TEARDROP-SPOKED PINWHEEL ASTERISK
+❄	2744	SNOWFLAKE
+❅	2745	TIGHT TRIFOLIATE SNOWFLAKE
+❆	2746	HEAVY CHEVRON SNOWFLAKE
+❇	2747	SPARKLE
+❈	2748	HEAVY SPARKLE
+❉	2749	BALLOON-SPOKED ASTERISK
+❤	2764	HEAVY BLACK HEART
+*/
