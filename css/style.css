@@ -369,7 +369,7 @@ footer a {
   display: flex;
   flex-flow: row wrap;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 #motUL li {
   width: 50px;
@@ -414,6 +414,35 @@ footer a {
 }
 #starCount:focus {
   background-color: #96e8d9;
+}
+
+#planningPart {
+  width: 80%;
+  margin: 10px auto;
+  text-align: left;
+  color: white;
+}
+#planningPart h3 {
+  display: inline;
+}
+#planningPart .planning-controls {
+  display: inline;
+}
+#planningPart .planning-controls li {
+  display: inline;
+  margin: 0 20px;
+  text-decoration: underline;
+  color: #56DAC2;
+  cursor: pointer;
+}
+#planningPart .planning-controls li:hover {
+  color: #f8a0a0;
+}
+#planningPart .plan-input {
+  border: solid purple;
+}
+#planningPart .plan-grid {
+  border: solid teal;
 }
 
 * {

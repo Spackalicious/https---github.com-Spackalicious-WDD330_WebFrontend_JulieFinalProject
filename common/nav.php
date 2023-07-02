@@ -13,8 +13,11 @@
         <li>
             <a href="planning.php" class="planning">Planning</a>
         </li>        
-        <li>
+        <!-- <li>
             <a href="account.php" class="account">Account</a>
+        </li> -->
+        <li>
+            <a target="_blank" href="https://www.homeschool.juliespackman.com/" class="about">About</a>
         </li>
     </ul>
 </nav>

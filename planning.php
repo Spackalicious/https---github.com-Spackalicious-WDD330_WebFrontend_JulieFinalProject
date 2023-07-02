@@ -8,6 +8,7 @@
     <style>
         .planning {background-color: white; font-weight: bold;}
     </style>
+    <script src="scripts/planning.js" defer></script>
 </head>
 
 <body>
@@ -15,16 +16,17 @@
     <?php include 'common/nav.php';?>     
     
         
-    <section>
-        <!-- <div class="body-img">
-            <img src="images/index2.jpg" alt="Julie's family photo">
-        </div>     -->
+    <section id="planningPart">
         
-        <div class="body-text">
-        <h3>Planning</h3>
-            <p>Welcome to your Homeschool Momma's Organizer!</p>
-            <p>Bacon lorem ipsum</p>
-            <p><a href="">Link</a></p>
+        <div class="planning-div">
+            <h3>Planning</h3>
+            <ul class="planning-controls">
+                <li id="planningLists">clear all for fresh plans!</li>
+            </ul>
+            <div class="plan-input">  
+            </div>
+            <div class="plan-grid">   
+            </div>
         </div>
 
     </section>

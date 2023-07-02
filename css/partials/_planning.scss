@@ -1,0 +1,40 @@
+// begin daily page section
+#planningPart {
+    // main section
+    width: 80%;
+    margin: 10px auto;
+    text-align: left;
+    // border: solid green;
+    color: white;
+    h3 {
+      display: inline;
+    }
+    .planning-controls {
+      display: inline;
+      li {
+        display: inline;
+        margin: 0 20px;
+        text-decoration: underline;
+        color: $color-4;
+        cursor: pointer;
+        &:hover {
+          color: $color-3d;
+        }
+      }
+    }
+    .plan-input {
+      border: solid purple;
+      #inputPlanContainer {
+        border: solid red;
+        .inputPlanTitle {
+          border: solid blue;
+        }
+        .input-plan-details {
+          border: solid green;
+        }
+      }
+    }
+    .plan-grid {
+      border: solid teal;
+    }
+  }

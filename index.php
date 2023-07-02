@@ -28,8 +28,9 @@
                 <li>~ <a href="motivation.php">A team motivation tracker</a>. You can see the back story of how this began in our home <a href="https://www.homeschool.juliespackman.com/motivation.php#pizza" target="_blank">here</a>!</li>
                 <li>~ <a href="planning.php">A notes page</a> where you can keep your thoughts for future planning!</li>
             </ul>
-            <p><a href="account.php">Get your free account now!</a></p>
-            <p><br><i>*Currently, this site app is in the beta stages. Information you submit is ONLY kept on your end in localStorage. Clearing your cookies will clear your data. I do not yet have any databases set up to store your information. This includes login information. Eventually, I'll get this more polished. For now, un/pw will protect your info from your kids, which may or may not be helpful. *smile* If the data is important to you, a quick screenshot saved can keep your lists and notes from being lost on accident! Thank you for your understanding and patience!</i></p>
+            <!-- <p><a href="account.php">Get your free account now!</a></p> -->
+            <!-- <p><br><i>*Currently, this site app is in the beta stages. Information you submit is ONLY kept on your end in localStorage. Clearing your cookies will clear your data. I do not yet have any databases set up to store your information. This includes login information. Eventually, I'll get this more polished. For now, un/pw will protect your info from your kids, which may or may not be helpful. *smile* If the data is important to you, a quick screenshot saved can keep your lists and notes from being lost on accident! Thank you for your understanding and patience!</i></p> -->
+            <p><br><i>*Currently, this {free} site app is in the beta stages. Information you submit is ONLY kept on your end in localStorage. Clearing your cookies will clear your data. Eventually, I'll get this more polished! *smile* If the data is important to you, a quick screenshot saved can keep your lists and notes from being lost on accident! Thank you for your understanding and patience!</i></p>
         </div>
 
     </section>
