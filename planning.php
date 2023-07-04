@@ -21,7 +21,7 @@
         <div class="planning-div">
             <h3>Planning</h3>
             <ul class="planning-controls">
-                <li id="planningLists">clear all for fresh plans!</li>
+                <li id="planningLists">clear all & restart plans</li>
             </ul>
             <div class="plan-input">  
             </div>

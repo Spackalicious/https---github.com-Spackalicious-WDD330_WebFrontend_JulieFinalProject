@@ -20,7 +20,7 @@
         <div class="daily-section">
             <h3>Daily Lists</h3>
             <ul class="main-controls">
-                <li id="clearLists">clear all & restart</li>
+                <li id="clearLists">clear all & restart lists</li>
             </ul>
 
     <div class="list-columns">   

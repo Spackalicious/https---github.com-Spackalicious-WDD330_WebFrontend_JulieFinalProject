@@ -21,7 +21,7 @@
         <div id="motivation-section">
             <h3>Team Motivation</h3>
             <!-- <p><span id="resetStars">reset stars</span>   |   earn multiple stars: <input id="starCount"/></p> -->
-            <p><span id="resetStars">reset stars</span></p>
+            <p><span id="resetStars">clear all & reset stars</span></p>
         </div>
         <div id="motDiv">
             <ul id="motUL">  
