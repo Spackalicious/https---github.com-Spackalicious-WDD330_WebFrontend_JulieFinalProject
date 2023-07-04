@@ -439,10 +439,84 @@ footer a {
   color: #f8a0a0;
 }
 #planningPart .plan-input {
-  border: solid purple;
+  margin: 10px 0 0 0;
 }
-#planningPart .plan-grid {
-  border: solid teal;
+#planningPart .plan-input #inputPlanContainer {
+  width: 100%;
+  padding: 10px 5px;
+  background: #404040;
+  overflow: hidden;
+}
+#planningPart .plan-input #inputPlanContainer .inputPlanTitle {
+  display: flex;
+}
+#planningPart .plan-input #inputPlanContainer .inputPlanTitle .input-plan-title {
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+  color: #404040;
+  font-family: "Comic Neue", cursive;
+}
+#planningPart .plan-input #inputPlanContainer .input-plan-details {
+  font-family: "Comic Neue", cursive;
+  width: 100%;
+  padding: 10px;
+}
+#planningPart .plan-input #inputPlanContainer .input-plan-details:focus {
+  background-color: white;
+}
+#planningPart #submitPlan {
+  width: 100px;
+  margin: 10px auto;
+  padding: 10px;
+  border: #404040 solid;
+  background: #CCDB38;
+  color: #404040;
+  font-family: "Comic Neue", cursive;
+  cursor: pointer;
+}
+#planningPart #submitPlan:hover {
+  background: #56DAC2;
+}
+#planningPart .plan-grid table, #planningPart .plan-grid th, #planningPart .plan-grid td {
+  border: solid 1px #404040;
+  border-collapse: collapse;
+  font-family: "Comic Neue", cursive;
+}
+#planningPart .plan-grid table {
+  width: 100%;
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+}
+#planningPart .plan-grid th {
+  width: 25%;
+  max-width: 200px;
+  text-align: right;
+  color: white;
+  background: #404040;
+  padding: 5px 10px 5px 0;
+  overflow: hidden;
+}
+#planningPart .plan-grid td {
+  color: #404040;
+  padding: 5px 0 0 5px;
+}
+#planningPart .plan-grid .planDelete {
+  float: left;
+  font-weight: bold;
+  color: #f8a0a0;
+  background: #404040;
+  padding: 0 10px;
+  margin: 0;
+  height: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+#planningPart .plan-grid .planDelete:hover {
+  color: #CCDB38;
 }
 
 * {

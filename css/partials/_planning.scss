@@ -3,9 +3,9 @@
     // main section
     width: 80%;
     margin: 10px auto;
-    text-align: left;
-    // border: solid green;
+    text-align: left;    
     color: white;
+    // border: solid green;
     h3 {
       display: inline;
     }
@@ -23,18 +23,99 @@
       }
     }
     .plan-input {
-      border: solid purple;
-      #inputPlanContainer {
-        border: solid red;
+      // border: solid purple;
+      margin: 10px 0 0 0;
+      #inputPlanContainer {    
+        width: 100%;
+        padding: 10px 5px;
+        background: $color-5; 
+        overflow: hidden;                 
+        // border: solid red;
         .inputPlanTitle {
-          border: solid blue;
+          // this is the h1 shell
+          // border: solid red;
+          display: flex;
+          .input-plan-title {
+            // the input within the h1
+            width: 100%;
+            margin: 0 0 10px 0;          
+            padding: 0 10px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color-5;
+            font-family: $body-font;         
+            // border: solid blue;
+          }
         }
         .input-plan-details {
-          border: solid green;
+          // no shell :) 
+          font-family: $body-font;
+          width: 100%;
+          padding: 10px;
+          &:focus {
+            background-color: white;
+            //     border: 3px solid darkcyan;
+            //     outline: none;
+          }
         }
+        
       }
     }
+
+    #submitPlan {
+      width: 100px;
+      margin: 10px auto;
+      padding: 10px;
+      border: $color-5 solid;
+      background: $color-6;
+      color: $color-5;
+      font-family: $body-font;
+      cursor: pointer;
+      &:hover {
+        background: $color-4;
+      }
+    }
+
     .plan-grid {
-      border: solid teal;
+      // border: solid teal;
+      table, th, td {              
+        border: solid 1px $color-5;
+        border-collapse: collapse;        
+        font-family: $body-font;
+      }
+      table {
+        width: 100%;
+        margin: 10px 0 0 0;
+        border-radius: 5px;
+      }
+      th {
+        width: 25%;
+        max-width: 200px;
+        text-align: right;
+        color: white;
+        background: $color-5;
+        padding: 5px 10px 5px 0 ;
+        overflow: hidden;
+      }
+      td {
+        color: $color-5;
+        padding: 5px 0 0 5px;
+      }
+      .planDelete {
+        float: left;
+        font-weight: bold;
+        color: $color-3d;
+        background: $color-5;
+        padding: 0 10px;
+        margin: 0;   
+        height: 20px;     
+        cursor: pointer;
+        // border: solid red 1px;
+        overflow: hidden;
+        &:hover {
+          color: $color-6;
+        }
+      }
     }
   }
