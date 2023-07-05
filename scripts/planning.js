@@ -88,6 +88,7 @@ async function makeNewPlan() {
             </tr>                   
         </table>`
         return table;
+        // this hidden code has a <span>X</span> in it, intended to delete each individual table. To be puzzled out at a later date. 
         // const table = `<table id=${current}>
         //     <tr>    
         //         <th><span class="planDelete1" id="pd-${current}">X</span>Date</th>
